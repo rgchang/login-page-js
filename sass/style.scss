@@ -1,0 +1,49 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	form {
+		background-color: white;
+		padding: 3em;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		width: 16em;
+		box-shadow: 3px 3px 5px black;
+		input {
+			margin: 8px 0;
+			height: 2em;
+			border: none;
+			border-bottom: 1px solid lightgrey;
+			font-family: 'Josefin sans';
+			letter-spacing: 1px;
+			font-size: 1em;
+			padding-left: 10px;
+		}
+		input:last-of-type { 
+			background-color: hsl(189, 50%, 32%);
+			opacity: .7;
+			border: none;
+			transition: .3s ease-in-out;
+			color: white;
+			padding-left: 0;
+			&:hover {
+				cursor: pointer;
+				background-color: transparentize(hsl(189, 50%, 32%), .4);
+			}
+		}
+	}
+}
